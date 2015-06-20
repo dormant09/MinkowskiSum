@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CA2AB6BA1B35B8C800E7C1CF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA2AB6B91B35B8C800E7C1CF /* main.cpp */; };
+		CA2AB6C11B35B97600E7C1CF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2AB6C01B35B97600E7C1CF /* OpenGL.framework */; };
+		CA2AB6C31B35B97A00E7C1CF /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2AB6C21B35B97A00E7C1CF /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		CA2AB6B61B35B8C800E7C1CF /* MinkowskiSum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MinkowskiSum; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2AB6B91B35B8C800E7C1CF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CA2AB6C01B35B97600E7C1CF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		CA2AB6C21B35B97A00E7C1CF /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2AB6C31B35B97A00E7C1CF /* GLUT.framework in Frameworks */,
+				CA2AB6C11B35B97600E7C1CF /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +47,8 @@
 		CA2AB6AD1B35B8C800E7C1CF = {
 			isa = PBXGroup;
 			children = (
+				CA2AB6C21B35B97A00E7C1CF /* GLUT.framework */,
+				CA2AB6C01B35B97600E7C1CF /* OpenGL.framework */,
 				CA2AB6B81B35B8C800E7C1CF /* MinkowskiSum */,
 				CA2AB6B71B35B8C800E7C1CF /* Products */,
 			);
