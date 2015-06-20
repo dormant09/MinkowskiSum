@@ -10,6 +10,8 @@
 		CA2AB6BA1B35B8C800E7C1CF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA2AB6B91B35B8C800E7C1CF /* main.cpp */; };
 		CA2AB6C11B35B97600E7C1CF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2AB6C01B35B97600E7C1CF /* OpenGL.framework */; };
 		CA2AB6C31B35B97A00E7C1CF /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2AB6C21B35B97A00E7C1CF /* GLUT.framework */; };
+		CA2AB6C61B35BF6D00E7C1CF /* GeometryHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA2AB6C41B35BF6D00E7C1CF /* GeometryHandler.cpp */; };
+		CA2AB6C91B35BFDA00E7C1CF /* Surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA2AB6C71B35BFDA00E7C1CF /* Surface.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,10 @@
 		CA2AB6B91B35B8C800E7C1CF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CA2AB6C01B35B97600E7C1CF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		CA2AB6C21B35B97A00E7C1CF /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		CA2AB6C41B35BF6D00E7C1CF /* GeometryHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeometryHandler.cpp; sourceTree = "<group>"; };
+		CA2AB6C51B35BF6D00E7C1CF /* GeometryHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeometryHandler.h; sourceTree = "<group>"; };
+		CA2AB6C71B35BFDA00E7C1CF /* Surface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Surface.cpp; sourceTree = "<group>"; };
+		CA2AB6C81B35BFDA00E7C1CF /* Surface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Surface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,10 @@
 			isa = PBXGroup;
 			children = (
 				CA2AB6B91B35B8C800E7C1CF /* main.cpp */,
+				CA2AB6C41B35BF6D00E7C1CF /* GeometryHandler.cpp */,
+				CA2AB6C51B35BF6D00E7C1CF /* GeometryHandler.h */,
+				CA2AB6C71B35BFDA00E7C1CF /* Surface.cpp */,
+				CA2AB6C81B35BFDA00E7C1CF /* Surface.h */,
 			);
 			path = MinkowskiSum;
 			sourceTree = "<group>";
@@ -126,7 +136,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2AB6C61B35BF6D00E7C1CF /* GeometryHandler.cpp in Sources */,
 				CA2AB6BA1B35B8C800E7C1CF /* main.cpp in Sources */,
+				CA2AB6C91B35BFDA00E7C1CF /* Surface.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +252,7 @@
 				CA2AB6BF1B35B8C800E7C1CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
