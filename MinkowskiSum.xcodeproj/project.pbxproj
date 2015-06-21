@@ -35,6 +35,7 @@
 		CA2AB6C51B35BF6D00E7C1CF /* GeometryHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeometryHandler.h; sourceTree = "<group>"; };
 		CA2AB6C71B35BFDA00E7C1CF /* Surface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Surface.cpp; sourceTree = "<group>"; };
 		CA2AB6C81B35BFDA00E7C1CF /* Surface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Surface.h; sourceTree = "<group>"; };
+		CA2AB6CA1B35C49800E7C1CF /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 				CA2AB6C51B35BF6D00E7C1CF /* GeometryHandler.h */,
 				CA2AB6C71B35BFDA00E7C1CF /* Surface.cpp */,
 				CA2AB6C81B35BFDA00E7C1CF /* Surface.h */,
+				CA2AB6CA1B35C49800E7C1CF /* Constants.h */,
 			);
 			path = MinkowskiSum;
 			sourceTree = "<group>";

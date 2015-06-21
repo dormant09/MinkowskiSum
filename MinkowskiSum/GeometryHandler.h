@@ -12,11 +12,7 @@
 #include <GLUT/GLUT.h>
 #include "Surface.h"
 
-static const int NONE_SELECTED = 0;
-static const int C_SELECTED = 100;
-static const int D_SELECTED = 200;
 
-static const double CLICK_ERROR = 0.5;
 
 
 class GeometryHandler

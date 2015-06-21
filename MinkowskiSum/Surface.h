@@ -11,17 +11,16 @@
 
 #include <math.h>
 #include <GLUT/GLUT.h>
+#include "Constants.h"
 
-static const int LINE_STRIP = 64;
+
 
 class Surface
 {
     public :
     
+    
     double color[3];
-    
-    double B[LINE_STRIP+1][4];
-    
     
     double point[4][4][3];
     double surface[LINE_STRIP + 1][LINE_STRIP + 1][3];

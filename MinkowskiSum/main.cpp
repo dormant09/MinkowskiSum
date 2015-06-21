@@ -9,23 +9,7 @@
 
 #include <GLUT/GLUT.h>
 #include "GeometryHandler.h"
-
-static const double PI = 3.14159265358979;
-static const double ANGLE_INTERVAL = PI/128.0;
-
-static const int WINDOW_WIDTH = 720;
-static const int WINDOW_HEIGHT = 720;
-
-static const int WINDOW_POSITION_X = 300;
-static const int WINDOW_POSITION_Y = 300;
-
-static const double VIEW_SIZE = 15.0;
-static const double ORTHO_Z_NEAR = -100.0;
-static const double ORTHO_Z_FAR = 100.0;
-
-static const int DISPLAY_MODE_DEFAULT(1);
-//static const int DISPLAY_MODE_ISOPARAMETER_CURVE(2);
-//static const int DISPLAY_MODE_TETRAHEDRON_TRAJECTORY(3);
+#include <iostream>
 
 int displayMode = DISPLAY_MODE_DEFAULT;
 
@@ -33,9 +17,10 @@ int mouseSelection = NONE_SELECTED;
 int selectedPoint[2];
 int selectedAxes[2];
 
+
 GLsizei width, height;
 
-double theta = 0.0;
+int cameraAngle = 0;
 double scale = 1.0;
 
 GeometryHandler *geometryHandler = new GeometryHandler();
@@ -135,7 +120,7 @@ void project3D()
 {
     project();
     glScaled(scale, scale, scale);
-    gluLookAt(cos(theta), sin(theta), 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0);
+    gluLookAt(lookupTableCosine(cameraAngle), lookupTableSine(cameraAngle), 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0);
 }
 
 void drawLeftTop()
@@ -345,7 +330,10 @@ void motion(int x, int y)
 
 void idle()
 {
-    theta += ANGLE_INTERVAL;
+    
+    ++cameraAngle;
+    if(cameraAngle == ANGLE_DIVISION) cameraAngle = 0;
+    
     
     glutPostRedisplay();
 }

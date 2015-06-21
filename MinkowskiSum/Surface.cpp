@@ -14,14 +14,7 @@
 Surface::Surface()
 {
     
-    for(int i=0; i<= LINE_STRIP; i++)
-    {
-        double c = (double)i/LINE_STRIP;
-        B[i][0] = pow(1.0-c, 3);
-        B[i][1] = 3.0*pow(1.0-c, 2)*(c);
-        B[i][2] = 3.0*(1.0-c)*pow(c, 2);
-        B[i][3] = pow(c, 3);
-    }
+
     
 }
 
@@ -48,7 +41,7 @@ void Surface::setSurface()
             {
                 for(int l=0; l<4; l++)
                 {
-                    double Bernstein = B[i][k]*B[j][l];
+                    double Bernstein = lookupTableBernstein[k](i)*lookupTableBernstein[l](j);
                     
                     x += Bernstein * getPoint(k, l, 0);
                     y += Bernstein * getPoint(k, l, 1);
